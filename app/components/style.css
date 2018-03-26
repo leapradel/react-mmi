@@ -1,0 +1,36 @@
+div {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+div.machine {
+   font-size: 2em;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   border-color: black;
+}
+div.footer {
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: grey;
+    color: white;
+}
+div.header {
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: grey;
+    color: white;
+}
+
+.machine.active {
+    color: grey;
+    font-weight: bold;
+}
+
+button {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
