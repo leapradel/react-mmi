@@ -26,11 +26,11 @@ div.header {
 }
 
 .machine.active {
-    color: grey;
-    font-weight: bold;
+
 }
 
 button {
+    background-color: grey;
     border-style: solid;
     border-width: 3px;
     border-color: black;

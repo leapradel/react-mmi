@@ -16,24 +16,24 @@ class Machine extends React.Component {
       super(props);
       
       this.state = {
-         isActive: "Désactivé"
+         isActive: true
       }
       this.updateState = this.updateState.bind(this);
    };
    updateState() {
-      this.setState({isActive: "Activé"})
+      this.setState({isActive: !this.state.isActive})
    }
   render() {
     // Dans tous les cas, afficher
     return  (
     
-    <div className="machine" className= { this.props.isActive ? "machine active" : "machine" }>
+    <div className="machine" className= { this.state.isActive ? "machine active" : "machine" }>
     
         { this.props.name } | { this.props.isActive }
         
          <button onClick = {this.updateState}>Changer de statut</button>
-            <h4>{this.state.isActive}</h4>
-            
+            <h4>{ this.state.isActive ? "machine activé" : "machine desactivé" }</h4>
+
     </div>
     
     );
