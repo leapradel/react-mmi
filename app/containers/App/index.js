@@ -12,8 +12,6 @@ import Footer from '../../components/footer.js';
 import Toggle from '../../components/toggle.js';
 import ReactDOM from 'react-dom';
 
-
-
 // On peut aussi importer du CSS de la meme facon.
 import '../../components/style.css';
 
@@ -29,7 +27,7 @@ export default function App() {
     <Toggle/>
     <Machine number="3"/>
     <Toggle/>
-    <Machine number="4" isActive/>
+    <Machine number="111111" isActive/>
     <Toggle/>
     <Footer/>
     </div>
