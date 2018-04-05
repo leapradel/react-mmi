@@ -44,6 +44,7 @@ class App extends React.Component {
     return (
       
       <div>
+
          <Header/>
          
       {this.state.machines.map(machine => 
@@ -60,8 +61,11 @@ class App extends React.Component {
 }
 
 }
-    
+
   export default App;
+
+
+  
     
     // Un return doit retourner un seul élément du DOM
     // Si on veut afficher plusieurs éléments adjacents,

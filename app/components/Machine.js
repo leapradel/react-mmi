@@ -9,31 +9,35 @@
  
  
 import React from 'react';
+import {render} from 'react-dom';
+import Switch from 'react-toggle-switch'
 
 class Machine extends React.Component {
     
      constructor(props) {
       super(props);
-      
-      this.state = {
-         isActive: true
-      }
-      this.updateState = this.updateState.bind(this);
-   };
-   updateState() {
-      this.setState({isActive: !this.state.isActive})
-   }
+         this.state = {
+      switched: false
+    };
+  }
+
+  toggleSwitch = () => {
+    this.setState(prevState => {
+      return {
+        switched: !prevState.switched
+      };
+    });
+  };
+ 
   render() {
     // Dans tous les cas, afficher
     return  (
     
     <div className="machine" className= { this.state.isActive ? "machine active" : "machine" }>
     
-        { this.props.name } | { this.props.isActive }
-        
-         <button onClick = {this.updateState}>Changer de statut</button>
-            <h4>{ this.state.isActive ? "machine activé" : "machine desactivé" }</h4>
-
+        { this.props.name }  { this.props.isActive }
+        <Switch onClick={this.toggleSwitch} on={this.state.switched}/>
+        <h4>{ this.state.switched ? "Activée" : "Désactivée" }</h4>
     </div>
     
     );

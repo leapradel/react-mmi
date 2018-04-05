@@ -6,7 +6,6 @@ class Header extends React.Component {
   render() {
     // Dans tous les cas, afficher
     return  <div className="header">Header</div>
-  
   }
 }
 

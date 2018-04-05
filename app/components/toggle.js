@@ -1,26 +1,33 @@
 
-import React from 'react';
+import React, {Component} from 'react';
+import {render} from 'react-dom';
+import Switch from 'react-toggle-switch'
 
-class App extends React.Component {
-   constructor(props) {
-      super(props);
-      
-      this.state = {
-         isActive: false
-      }
-      this.updateState = this.updateState.bind(this);
-   };
-   updateState() {
-      this.setState({isActive: true})
-   }
-   render() {
-      return (
-         <div>
-            <button onClick = {this.updateState}>Changer de statut</button>
-            <h4>{this.state.isActive}</h4>
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      switched: false
+    };
+  }
 
-         </div>
-      );
-   }
+  toggleSwitch = () => {
+    this.setState(prevState => {
+      return {
+        switched: !prevState.switched
+      };
+    });
+  };
+
+  render() {
+    return (
+        <div>
+            {/* Basic Switch */}
+            <Switch onClick={this.toggleSwitch} on={this.state.switched}/>
+        </div>
+    );
+  }
+
 }
-export default App;
+
+export default MyComponent;
