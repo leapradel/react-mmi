@@ -21,6 +21,7 @@ const Map = () => (
 
       <hr />
 
+
       <Route exact path="/machine1" component={M1} />
       <Route path="/machine2" component={M2} />
       <Route path="/machine3" component={M3} />
