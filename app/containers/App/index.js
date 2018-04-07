@@ -10,7 +10,11 @@ import Machine from '../../components/Machine.js';
 import Header from '../../components/header.js';
 import Footer from '../../components/footer.js';
 import Toggle from '../../components/toggle.js';
+import Map from '../../components/routes.js';
+
 import ReactDOM from 'react-dom';
+
+
 
 // On peut aussi importer du CSS de la meme facon.
 import '../../components/style.css';
@@ -44,8 +48,10 @@ class App extends React.Component {
     return (
       
       <div>
-
+          
          <Header/>
+         
+<Map/>
          
       {this.state.machines.map(machine => 
         <Machine name={machine.name}
