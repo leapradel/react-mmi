@@ -1,62 +1,94 @@
-div {
-    text-align: center;
-    font-family: sans-serif;
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.switch{border:1px solid #ccc;width:50px;height:26px;border-radius:13px;cursor:pointer;display:inline-block}.switch-toggle{border:1px solid #999;box-shadow:1px 1px 1px #ccc;width:25px;height:24px;left:0;border-radius:12px;background:#fff;position:relative;transition:left .2s ease-in-out}.switch.on{background:green}.switch.on .switch-toggle{left:23px}.switch.disabled{cursor:not-allowed}
-
-div.machine {
-   font-size: 1.5em;
-   margin-top: 2em;
-   margin-bottom: 2em;
-   border-color: black;
+/* Header and footer, content listing */
+.header,
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background: #eee;
 }
 
-div.footer {
-    font-size: 1.5em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background-color: grey;
-    color: white;
+.machines-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.header {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
 
-ul {
-
- list-style-type:none;
+ /* Layout */
+ .main {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
  }
-li {
- margin-left:2px;
- float:left; /*pour IE*/
+ 
+ /* Header and footer, content listing */
+ .header,
+ .footer {
+   padding: 20px 0;
+   text-align: center;
+   background: #eee;
  }
-ul li a {
- display:block;
- float:left;   
- width:100px;
- background-color: gray;
- color:black;
- text-decoration:none;
- text-align:center;
- padding:5px;
- border:2px solid;
- /*pour avoir un effet "outset" avec IE :*/
- border-color:#DCDCDC #696969 #696969 #DCDCDC;
+ 
+ .machines-list {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
  }
-ul li a:hover {
- background-color:#D3D3D3;
- border-color:#696969 #DCDCDC #DCDCDC #696969;
+ 
+ .header {
+   text-transform: uppercase;
+   letter-spacing: 6px;
+   font-weight: bold;
  }
-
-div.header {
-    font-size: 1.5em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background-color: grey;
-    color: white;
+ 
+/* Counter */
+.counter {
+  text-align: center;
+  font-size: 1.4em;
 }
 
-h4 {
-    color: red;
-    font-size: 1em!important;
-
-}
+ /* Machines */
+ .machine {
+   border-bottom: 1px solid #fdfdfd;
+   font-size: 2rem;
+   padding: 1rem 0;
+   color: #aaa;
+   text-transform: uppercase;
+   font-weight: 600;
+ }
+ 
+ .react-toggle {
+   margin-left: 1rem;
+ }
+ 
+ .machine.active {
+   color: #19AB27;
+ }
+ 
+ .btn {
+   background: #2196f3;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 10px;
+   margin-left: 25px;
+   font-size: 14px;
+ }
+ 
+ .btn:hover {
+   background-color: #f44336;
+   cursor: pointer;
+ }
