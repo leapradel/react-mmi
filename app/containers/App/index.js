@@ -87,12 +87,15 @@ import '../../components/style.css';
       <div className="main">
         <Header/>
           <AddMachineForm addMachineToState={this.addMachineToState}/>
+           
           {/*Compteurs*/}
+          
           <div className="counter">
             <strong>{totalActive}</strong> / <strong>{total}</strong> Machines actives
           </div>
           {/*Conteneur de notre liste*/}
           <div className="machines-list">
+         
             {/*Boucle sur notre collection de machines*/}
             {
               Object
@@ -107,6 +110,7 @@ import '../../components/style.css';
                          isActive={this.state.machines[key].isActive}/>
               )}
           </div>
+          <Map/>
         <Footer/>
       </div>
     );

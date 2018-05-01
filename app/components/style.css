@@ -12,6 +12,14 @@
   background: #eee;
 }
 
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+ul {
+    text-align: center;
+}
+
 .machines-list {
   flex: 1;
   display: flex;

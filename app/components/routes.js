@@ -6,16 +6,16 @@ const Map = () => (
     <div>
       <ul>
         <li>
-          <Link to="/machine1">Machine 1</Link>
+          <Link to="/machine1">Machine cafe</Link>
         </li>
         <li>
-          <Link to="/machine2">Machine 2</Link>
+          <Link to="/machine2">Machine the</Link>
         </li>
         <li>
-          <Link to="/machine3">Machine 3</Link>
+          <Link to="/machine3">Machine frappucino</Link>
         </li>
          <li>
-          <Link to="/machine4">Machine 4</Link>
+          <Link to="/machine4">Machine citron</Link>
         </li>
       </ul>
 
@@ -31,25 +31,25 @@ const Map = () => (
 );
 
 const M1 = () => (
-  <div>
-    <h2>Localisation de la machine 1</h2>
-  </div>
+  <div class="local">
+    <h2>Localisation de la machine a cafe</h2>
+    </div>
 );
 
 const M2 = () => (
-  <div>
-    <h2>Localisation de la machine 2</h2>
+  <div class="local">
+    <h2>Localisation de la machine a the</h2>
   </div>
 );
 
 const M3 = () => (
- <div>
-    <h2>Localisation de la machine 3</h2>
+ <div class="local">
+    <h2>Localisation de la machine a frappucino</h2>
   </div>
 );
 const M4 = () => (
- <div>
-    <h2>Localisation de la machine 4</h2>
+ <div class="local">
+    <h2 >Localisation de la machine a citron</h2>
   </div>
 );
 
